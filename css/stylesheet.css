@@ -16,7 +16,7 @@
   }
 
   @font-face {
-    font-family: minecraft;
+    font-family: Minecraft;
     src: url("../font/Minercraftory.ttf") format('tff');
     font-weight: 400;
   }
@@ -38,7 +38,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: minecraft;
+    font-family: Minecraft;
   }
 
   .header {
@@ -63,7 +63,7 @@
 
   .navbars a{
     position: relative;
-    font-size: 18px;
+    font-size: 19px;
     color: #1d1e1f;
     font-weight: 500;
     text-decoration: none;
@@ -76,7 +76,7 @@
     top: 100%;
     left: 0;
     width: 0%;
-    height: 3px;
+    height: 4px;
     background: #1d1e1f;
     transition: 0.4s;
   }
@@ -84,6 +84,55 @@
   .navbars a:hover::before{
     width: 100%;
   }
+
+/* Style for the container */
+.versions {
+  position: relative;
+  border-radius: 10px;
+  background-color: #ffffff;
+  display: inline-block; /* Ensure the container only takes up the necessary space */
+  padding: 10px; /* Add padding for spacing */
+  margin-right: 0; /* Add right margin to create space between buttons */
+  text-align: center; /* Center text horizontally */
+  line-height: 1; /* Vertically center text */
+}
+
+/* Style for the link (the text) */
+.versions a {
+  text-decoration: none;
+  color: #1d1d1d;
+  font-size: 24px;
+  transition: color 0.3s ease; /* Add color transition */
+  position: relative;
+}
+
+/* Create the animated underline */
+.versions a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -5px; /* Adjust the position of the underline as needed */
+  width: 100%; /* Make the underline span the entire width */
+  height: 2px; /* Set the height of the underline */
+  background-color: #007bff; /* Color of the underline */
+  transform: scaleX(0); /* Initially, the underline is hidden */
+  transform-origin: bottom left;
+  transition: transform 0.3s ease; /* Add animation */
+}
+
+/* Hover effect to reveal the underline */
+.versions a:hover::after {
+  transform: scaleX(1); /* Scale the underline to reveal it on hover */
+  transform-origin: bottom right;
+}
+
+/* Change text color on hover */
+.versions a:hover {
+  color: #007bff;
+}
+
+
+
 
 
 
