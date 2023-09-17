@@ -150,6 +150,30 @@
     top: 47px;
     left: 220px;
 }
+/*Sets Value*/
+.githubstyle a{
+  position: relative;
+  font-size: 19px;
+  color: #1d1e1f;
+  font-weight: 500;
+  text-decoration: none;
+  margin-left: 40px;
+}
+/*Sets values before hover*/
+.githubstyle a::before{
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0%;
+  height: 4px;
+  background: #1d1e1f;
+  transition: 0.4s;
+}
+/*Sets the width on hover*/
+.githubstyle a:hover::before{
+  width: 100%;
+}
 
 
 
