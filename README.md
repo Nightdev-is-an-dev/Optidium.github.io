@@ -1,5 +1,5 @@
 # Archival
-This project was never completed. I don't know what I wan to do with the website and it will be takendown cuz I can't provide mod folders some mods are from curse forge some are from modrith. I don't want to work on this website if you want you can use this website as a base template
+This project was never completed. I don't know what I want to do with the website and it will be takendown cuz I can't provide mod folders some mods are from curseforge some are from modrith. I don't want to work on this website if you want you can use this website as a base template
 # Optidium
 Optidium is a mod pack to include all the optifine feature in sodium by caffeine mc
 # To visit the site
